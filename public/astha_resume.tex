@@ -28,31 +28,28 @@
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.55in}
-\addtolength{\evensidemargin}{-0.55in}
-\addtolength{\textwidth}{1.1in}
-\addtolength{\topmargin}{-.65in}
-\addtolength{\textheight}{1.3in}
+% Tight margins for 1-page fit
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.6in}
+\addtolength{\textwidth}{1.2in}
+\addtolength{\topmargin}{-.80in}
+\addtolength{\textheight}{1.6in}
 
 \urlstyle{same}
-
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-5pt}\scshape\raggedright\large\bfseries
+  \vspace{-6pt}\scshape\raggedright\large\bfseries
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 \pdfgentounicode=1
 
 % Custom commands
 \newcommand{\resumeItem}[1]{
-  \item\small{
-    {#1 \vspace{-2pt}}
-  }
+  \item\small{{#1 \vspace{-2pt}}}
 }
 
 \newcommand{\resumeSubheading}[4]{
@@ -71,14 +68,13 @@
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-3pt}}
-
 \renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={},itemsep=-1pt]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={},itemsep=-2pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=0pt]}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-4pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[itemsep=-1pt]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
 \begin{document}
 
@@ -92,22 +88,26 @@
 %-----------HEADING-----------------
 \begin{tabularx}{\linewidth}{X r}
   \textbf{\Large \name} & {\footnotesize \faPhone\ +91-\phone\ \ \faEnvelope\ \href{mailto:\emaila}{\emaila}} \\
-  \course &  \href{https://codolio.com/profile/ljs5nQ2r}{\raisebox{0.0\height}{\footnotesize \faLink}\ Codolio} \\
-  Computer Science &  \href{https://github.com/astha9900}{\raisebox{0.0\height}{\footnotesize \faGithub}\ GitHub} \\
-  Chandigarh University, Mohali, Punjab & \href{https://www.linkedin.com/in/astha-bharti-263586231/}{\raisebox{0.0\height}{\footnotesize \faLinkedin}\ LinkedIn}
+  \course\ $|$ Computer Science $|$ Chandigarh University &
+  \href{https://codolio.com/profile/ljs5nQ2r}{\footnotesize \faLink\ Codolio} \ \
+  \href{https://github.com/astha9900}{\footnotesize \faGithub\ GitHub} \ \
+  \href{https://www.linkedin.com/in/astha-bharti-263586231/}{\footnotesize \faLinkedin\ LinkedIn} \ \
+  \href{https://astha-portfolio-pi.vercel.app}{\footnotesize \faGlobe\ Portfolio}
 \end{tabularx}
+
+\vspace{-6pt}
 
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Chandigarh University, Mohali}{Aug 2021 -- May 2025}
-      {Bachelor's in Computer Science Engineering}{7.54 CGPA}
+      {Bachelor of Engineering -- Computer Science}{CGPA: 7.54}
     \resumeSubheading
-      {LND College, Motihari, Bihar}{April 2019 -- March 2020}
-      {Intermediate}{78.0\%}
+      {LND College, Motihari, Bihar}{Apr 2019 -- Mar 2020}
+      {Intermediate (Class XII)}{78.0\%}
   \resumeSubHeadingListEnd
-\vspace{-8pt}
+\vspace{-10pt}
 
 %-----------EXPERIENCE-----------
 \section{Experience}
@@ -116,25 +116,22 @@
       {Stunhaul Private Limited}{Nov 2025 -- April 2026}
       {Web Developer Intern}{Mohali, Punjab}
       \resumeItemListStart
-        \resumeItem{Engineered and deployed \textbf{5+ responsive, production-grade web applications} using \textbf{HTML5}, \textbf{CSS3}, \textbf{JavaScript (ES6+)}, \textbf{Node.js}, \textbf{Express.js}, and \textbf{MongoDB}, serving \textbf{1,000+ end users} across devices.}
-        \resumeItem{Architected and integrated \textbf{10+ RESTful API} endpoints following \textbf{MVC design pattern}, improving application scalability and reducing server response time by \textbf{20\%} through query optimization and middleware caching.}
-        \resumeItem{Delivered pixel-perfect, \textbf{mobile-first UI components} using \textbf{Tailwind CSS} and \textbf{Bootstrap}, cutting UI development time by \textbf{15\%} and achieving \textbf{98\% cross-browser compatibility} across Chrome, Firefox, and Safari.}
-        \resumeItem{Implemented \textbf{Git version control} workflows including branching strategies and pull request reviews, reducing merge conflicts by \textbf{30\%} and accelerating sprint delivery within \textbf{Agile} development cycles.}
-        \resumeItem{Collaborated in a \textbf{cross-functional team} of 5 engineers, participating in \textbf{daily stand-ups}, \textbf{code reviews}, and \textbf{sprint planning}, contributing to on-time delivery of \textbf{3 major feature releases}.}
+        \resumeItem{Engineered \textbf{5+ production-grade web applications} using \textbf{HTML5, CSS3, JavaScript (ES6+), Node.js, Express.js} and \textbf{MongoDB}, serving \textbf{1,000+ users} with enhanced cross-device responsiveness.}
+        \resumeItem{Architected \textbf{10+ RESTful API} endpoints following \textbf{MVC design pattern}, reducing server response time by \textbf{20\%} via query optimization and middleware caching.}
+        \resumeItem{Built \textbf{mobile-first UI components} with \textbf{Tailwind CSS} and \textbf{Bootstrap}, cutting UI development time by \textbf{15\%} and achieving \textbf{98\% cross-browser compatibility}.}
+        \resumeItem{Managed \textbf{Git} branching workflows within \textbf{Agile} sprints, reducing merge conflicts by \textbf{30\%} and ensuring on-time delivery of \textbf{3 major feature releases} in a cross-functional team of 5.}
       \resumeItemListEnd
   \resumeSubHeadingListEnd
-\vspace{-8pt}
+\vspace{-10pt}
 
-%-----------Technical Skills-----------
+%-----------TECHNICAL SKILLS-----------
 \section{Technical Skills}
-\begin{itemize}[leftmargin=0.1in, label={}]
+\begin{itemize}[leftmargin=0.1in, label={}, itemsep=-1pt]
 \small{\item{
 \textbf{Languages}{: Java, Python, JavaScript, TypeScript, HTML5, CSS3, C++} \\
-\textbf{Frameworks \& Libraries}{: React.js, Next.js, Node.js, Express.js, Tailwind CSS, Bootstrap, Framer Motion, REST API} \\
+\textbf{Frameworks \& Libraries}{: React.js, Next.js, Node.js, Express.js, Tailwind CSS, Bootstrap, REST API} \\
 \textbf{Databases \& ORM}{: PostgreSQL, MySQL, MongoDB, Prisma ORM, Mongoose} \\
-\textbf{Developer Tools}{: Git, GitHub, VS Code, Postman, Docker, Vercel, CI/CD} \\
-\textbf{AI / ML}{: OpenCV, MediaPipe, TensorFlow, Computer Vision, NumPy} \\
-\textbf{Concepts}{: Data Structures and Algorithms, OOP, MVC Architecture, Agile, SDLC, DBMS, Operating Systems, Computer Networks} \\
+\textbf{Tools \& Concepts}{: Git, GitHub, Docker, Vercel, Postman, Agile, MVC, SDLC, OOP, DSA, DBMS, CI/CD} \\
 }}
 \end{itemize}
 \vspace{-14pt}
@@ -145,61 +142,41 @@
   \resumeSubHeadingListStart
 
     \resumeProjectHeading
-      {\textbf{Skincare E-Commerce Platform} $|$ \emph{Next.js, Prisma ORM, PostgreSQL, NextAuth.js, Tailwind CSS} \href{https://skincare-ecommerce-zxlk.vercel.app}{\ \faLink\ Live} \href{https://github.com/astha9900/Skincare}{\ \faGithub\ Git}}{2025}
+      {\textbf{Skincare E-Commerce} $|$ \emph{Next.js, Prisma ORM, PostgreSQL, NextAuth.js, Tailwind CSS} \href{https://skincare-ecommerce-zxlk.vercel.app}{\ \faLink} \href{https://github.com/astha9900/Skincare}{\ \faGithub}}{2025}
       \resumeItemListStart
-        \resumeItem{Architected a \textbf{production-grade, full-stack e-commerce platform} supporting \textbf{50+ product SKUs}, complete with dynamic product catalog, shopping cart, wishlist, and \textbf{admin dashboard} for real-time inventory and order management using \textbf{Next.js App Router} and \textbf{Prisma ORM}.}
-        \resumeItem{Implemented \textbf{multi-provider secure authentication} with \textbf{NextAuth.js} (credentials + OAuth), enforcing \textbf{role-based access control (RBAC)} that reduced unauthorized access incidents by \textbf{100\%} across admin and customer routes.}
-        \resumeItem{Optimized \textbf{PostgreSQL} database queries with \textbf{Prisma ORM} and leveraged \textbf{Server-Side Rendering (SSR)} and \textbf{Incremental Static Regeneration (ISR)}, improving page load speed by \textbf{40\%} and achieving \textbf{90+ Lighthouse performance score}.}
-        \resumeItem{Designed a \textbf{fully responsive, WCAG-accessible UI} with Tailwind CSS featuring advanced product filters and search, reducing user drop-off rate by \textbf{25\%} on mobile devices; deployed via \textbf{Vercel CI/CD} pipeline.}
+        \resumeItem{Architected a \textbf{full-stack e-commerce platform} (50+ SKUs) with product catalog, cart, wishlist, and \textbf{admin dashboard} using \textbf{Next.js App Router}, \textbf{Prisma ORM}, and \textbf{RBAC via NextAuth.js}, eliminating \textbf{100\%} of unauthorized access.}
+        \resumeItem{Optimized \textbf{PostgreSQL} queries with \textbf{SSR/ISR}, improving page load speed by \textbf{40\%} and achieving a \textbf{90+ Lighthouse} performance score; deployed via \textbf{Vercel CI/CD} pipeline.}
+        \resumeItem{Designed a \textbf{WCAG-accessible, fully responsive UI} with advanced filters and search, reducing mobile user drop-off by \textbf{25\%}.}
       \resumeItemListEnd
-      \vspace{2pt}
+      \vspace{1pt}
 
     \resumeProjectHeading
-      {\textbf{Wanderlust -- Travel Listing Platform} $|$ \emph{Node.js, Express.js, MongoDB, Cloudinary, Mapbox, Passport.js} \href{https://wanderlust-w927.onrender.com/}{\ \faLink\ Live} \href{https://github.com/astha9900/Wanderlust..}{\ \faGithub\ Git}}{Jan -- May 2025}
+      {\textbf{Wanderlust} $|$ \emph{Node.js, Express.js, MongoDB, Passport.js, Cloudinary, Mapbox} \href{https://wanderlust-w927.onrender.com/}{\ \faLink} \href{https://github.com/astha9900/Wanderlust..}{\ \faGithub}}{Jan -- May 2025}
       \resumeItemListStart
-        \resumeItem{Developed a \textbf{full-stack travel listing platform} with \textbf{complete CRUD operations} for \textbf{100+ property listings}, interactive \textbf{Mapbox geolocation maps}, and cloud image uploads via \textbf{Cloudinary}, reducing image load time by \textbf{35\%}.}
-        \resumeItem{Engineered \textbf{session-based user authentication} using \textbf{Passport.js} with bcrypt password hashing, enabling secure registration, login, and ownership-enforced listing management with \textbf{0 security vulnerabilities} in penetration testing.}
-        \resumeItem{Built a \textbf{review and star-rating system} with server-side \textbf{authorization middleware}, ensuring only verified guests can submit reviews, increasing user engagement and community trust by \textbf{40\%}.}
+        \resumeItem{Developed a \textbf{full-stack travel listing platform} with \textbf{CRUD} for 100+ listings, interactive \textbf{Mapbox} maps, and \textbf{Cloudinary} image uploads reducing image load time by \textbf{35\%}.}
+        \resumeItem{Implemented \textbf{Passport.js} session-based auth with \textbf{bcrypt} hashing and authorization middleware, achieving \textbf{0 security vulnerabilities}; built a review system boosting user engagement by \textbf{40\%}.}
       \resumeItemListEnd
-      \vspace{2pt}
+      \vspace{1pt}
 
     \resumeProjectHeading
-      {\textbf{SkillVista -- Developer Learning Hub} $|$ \emph{React.js, JavaScript, Tailwind CSS, REST API} \href{https://skill-vista-five.vercel.app}{\ \faLink\ Live} \href{https://github.com/astha9900/SkillVista}{\ \faGithub\ Git}}{2024}
+      {\textbf{SkillVista} $|$ \emph{React.js, JavaScript, Tailwind CSS, REST API} \href{https://skill-vista-five.vercel.app}{\ \faLink} \href{https://github.com/astha9900/SkillVista}{\ \faGithub}}{2024}
       \resumeItemListStart
-        \resumeItem{Developed a \textbf{curated developer learning platform} with \textbf{structured skill tracks} across Frontend, Backend, and DSA domains, reducing average time-to-resource-discovery by \textbf{60\%} for users.}
-        \resumeItem{Engineered a \textbf{reusable, component-based UI architecture} in \textbf{React.js} with dynamic category filtering and real-time search, achieving \textbf{100\% responsiveness} across mobile, tablet, and desktop breakpoints.}
-        \resumeItem{Integrated \textbf{REST APIs} for dynamic content fetching and deployed via \textbf{Vercel} with an optimized production build pipeline, achieving \textbf{sub-2-second} initial page load time.}
+        \resumeItem{Built a \textbf{developer learning hub} with structured skill tracks (Frontend, Backend, DSA), cutting resource-discovery time by \textbf{60\%} for users.}
+        \resumeItem{Engineered a \textbf{component-based React.js UI} with dynamic filtering and \textbf{REST API} integration; achieved \textbf{100\% responsiveness} and \textbf{sub-2-second} page load on Vercel.}
       \resumeItemListEnd
-      \vspace{-6pt}
+      \vspace{-4pt}
 
   \resumeSubHeadingListEnd
-\vspace{-4pt}
-
-%-----------PROFILE LINKS-----------
-\section{Profile Links}
-\begin{itemize}[leftmargin=0.15in, label={}]
-\item[] \small{
-\href{https://leetcode.com/u/Astha9900/}{\textbf{LeetCode}} $\vert$
-\href{https://www.geeksforgeeks.org/user/singhastha614/}{\textbf{GeeksforGeeks}} $\vert$
-\href{https://www.hackerrank.com/profile/singhastha614}{\textbf{HackerRank}} $\vert$
-\href{https://codolio.com/profile/ljs5nQ2r}{\textbf{Codolio}} $\vert$
-\href{https://astha-portfolio-pi.vercel.app}{\textbf{Portfolio}}
-}
-\end{itemize}
-\vspace{-10pt}
+\vspace{-6pt}
 
 %-----------ACHIEVEMENTS-----------
 \section{Achievements}
-\textbf{Coding Competitions:}
-\begin{itemize}[itemsep=-1pt]
-    \item Solved over 400+ DSA problems on LeetCode \href{https://leetcode.com/u/Astha9900/}{Link}
-    \item Secured 740 All India Rank in CodeKaze Sept 2024 \href{https://drive.google.com/file/d/1hA3l3e1gyLbuW0x48-6epIuosppxmrcC/view?usp=sharing}{Link}
-\end{itemize}
-\textbf{Certifications:}
-\begin{itemize}[itemsep=-1pt]
-    \item Specialization in Java by LearnQuest (Coursera) \href{https://www.coursera.org/account/accomplishments/specialization/CA8Z6REJ8VV2}{Link}
-    \item Web Application Development with JavaScript and MongoDB by University of London (Coursera) \href{https://www.coursera.org/account/accomplishments/verify/TXJAWWZ8KTMP}{Link}
-    \item Achieved Top 5 percent in NPTEL certification course on Probability and Statistics \href{https://drive.google.com/file/d/12bYUgCIoV8Mr-lmuEXsTQcaxfSbKRllf/view?usp=sharing}{Link}
+\begin{itemize}[leftmargin=0.15in, itemsep=-1pt]
+  \small{
+    \item \textbf{LeetCode:} Solved \textbf{400+ DSA problems} \href{https://leetcode.com/u/Astha9900/}{[Link]} \quad
+          \textbf{CodeKaze Sept 2024:} \textbf{All India Rank 740} \href{https://drive.google.com/file/d/1hA3l3e1gyLbuW0x48-6epIuosppxmrcC/view?usp=sharing}{[Link]}
+    \item \textbf{Certifications:} Java Specialization -- LearnQuest/Coursera \href{https://www.coursera.org/account/accomplishments/specialization/CA8Z6REJ8VV2}{[Link]} $|$ Web Dev with JS \& MongoDB -- Univ. of London \href{https://www.coursera.org/account/accomplishments/verify/TXJAWWZ8KTMP}{[Link]} $|$ NPTEL Top 5\% -- Probability \& Statistics \href{https://drive.google.com/file/d/12bYUgCIoV8Mr-lmuEXsTQcaxfSbKRllf/view?usp=sharing}{[Link]}
+  }
 \end{itemize}
 
 \end{document}
