@@ -2,6 +2,10 @@
 
 A fast, modern, and responsive personal portfolio website showcasing my projects, skills, and experience as a Full Stack Developer. Built with Next.js, Tailwind CSS, and Framer Motion for smooth animations.
 
+## 🌐 Live Demo
+
+**[astha-portfolio-pi.vercel.app](https://astha-portfolio-pi.vercel.app/)**
+
 ## ✨ Features
 
 - **Hero Section** — Animated introduction with name, role, and CTA buttons
