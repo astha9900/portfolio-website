@@ -1,30 +1,90 @@
-# Portfolio website
+# 👩‍💻 Astha Bharti — Personal Portfolio Website
 
-*Automatically synced with your [v0.app](https://v0.app) deployments*
+A fast, modern, and responsive personal portfolio website showcasing my projects, skills, and experience as a Full Stack Developer. Built with Next.js, Tailwind CSS, and Framer Motion for smooth animations.
 
-[![Deployed on Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?style=for-the-badge&logo=vercel)](https://vercel.com/sastabihar-4181s-projects/v0-portfolio-website)
-[![Built with v0](https://img.shields.io/badge/Built%20with-v0.app-black?style=for-the-badge)](https://v0.app/chat/vGVDtANOrLI)
+## ✨ Features
 
-## Overview
+- **Hero Section** — Animated introduction with name, role, and CTA buttons
+- **About Me** — Background, education, and what drives me as a developer
+- **Skills Showcase** — Visual grid of technologies and tools I work with
+- **Projects Gallery** — Featured projects with descriptions, tech stack, and live/GitHub links
+- **Experience Timeline** — Education and work experience in a clean timeline layout
+- **Contact Section** — Direct email link and social profile buttons
+- **Dark / Light Mode** — System-preference aware theme toggle
+- **Smooth Animations** — Page transitions and scroll animations via Framer Motion
+- **Fully Responsive** — Optimised for mobile, tablet, and desktop
+- **Fast Performance** — Static generation with Next.js for near-instant load times
 
-This repository will stay in sync with your deployed chats on [v0.app](https://v0.app).
-Any changes you make to your deployed app will be automatically pushed to this repository from [v0.app](https://v0.app).
+## 🛠️ Tech Stack
 
-## Deployment
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat-square&logo=typescript&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=flat-square&logo=tailwind-css&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-black?style=flat-square&logo=framer&logoColor=white)
 
-Your project is live at:
+| Technology | Purpose |
+|-----------|---------|
+| Next.js 16 | React framework with App Router |
+| TypeScript | Type-safe development |
+| Tailwind CSS | Utility-first styling |
+| Framer Motion | Animations and page transitions |
+| shadcn/ui + Radix UI | Accessible UI components |
+| next-themes | Dark/Light mode support |
+| Vercel Analytics | Page view tracking |
 
-**[https://vercel.com/sastabihar-4181s-projects/v0-portfolio-website](https://vercel.com/sastabihar-4181s-projects/v0-portfolio-website)**
+## 🚀 Getting Started
 
-## Build your app
+```bash
+# Clone the repo
+git clone https://github.com/astha9900/portfolio-website.git
+cd portfolio-website
 
-Continue building your app on:
+# Install dependencies
+npm install
 
-**[https://v0.app/chat/vGVDtANOrLI](https://v0.app/chat/vGVDtANOrLI)**
+# Start development server
+npm run dev
+```
 
-## How It Works
+Open [http://localhost:3000](http://localhost:3000)
 
-1. Create and modify your project using [v0.app](https://v0.app)
-2. Deploy your chats from the v0 interface
-3. Changes are automatically pushed to this repository
-4. Vercel deploys the latest version from this repository
+## 📁 Project Structure
+
+```
+portfolio-website/
+├── app/
+│   ├── page.tsx            # Home page (all sections)
+│   ├── layout.tsx          # Root layout with theme provider
+│   └── globals.css         # Global styles
+│
+├── components/
+│   ├── Hero.tsx            # Animated hero section
+│   ├── About.tsx           # About me section
+│   ├── Skills.tsx          # Tech stack grid
+│   ├── Projects.tsx        # Project cards with links
+│   ├── Experience.tsx      # Timeline component
+│   ├── Contact.tsx         # Contact form / links
+│   ├── Navbar.tsx          # Responsive navigation
+│   └── ui/                 # shadcn/ui components
+│
+├── lib/
+│   └── utils.ts            # Utility functions
+│
+└── public/
+    └── images/             # Profile photo, project screenshots
+```
+
+## 🌐 Sections
+
+| Section | Description |
+|---------|-------------|
+| Hero | Name, title, tagline, CTA buttons |
+| About | Bio, education (Chandigarh University), interests |
+| Skills | Frontend, Backend, Database, Tools — all with icons |
+| Projects | Featured projects with live demo and GitHub links |
+| Contact | Email, LinkedIn, GitHub links |
+
+## 📄 License
+
+MIT © [Astha Bharti](https://github.com/astha9900)
