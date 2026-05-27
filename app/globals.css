@@ -117,6 +117,20 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
+@keyframes shimmer {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-feature-settings: "rlig" 1, "calt" 1;
+}
+
 @layer base {
   * {
     @apply border-border outline-ring/50;
